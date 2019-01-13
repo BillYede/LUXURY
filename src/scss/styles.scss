@@ -4,8 +4,13 @@
     box-sizing: border-box;
   }
 
+  h1 {
+    font-family: 'gilroy';
+  }
+
   @font-face {
     font-family: 'gilroy';
+    font-family: 'light';
     src: url(../media/Gilroy-ExtraBold.otf);
     src: url(../media/Gilroy-Light.otf);
   }
@@ -68,6 +73,7 @@
     &__description {
       margin: 20px;
       color: #8d8d8d;
+      font-family: 'light';
     }
   }
 
@@ -79,6 +85,7 @@
     }
     &__description {
       margin: 20px;
+      font-family: 'light';
     }
   }
 
@@ -90,6 +97,7 @@
     }
     &__description {
       margin: 20px;
+      font-family: 'light';
     }
   }
   
