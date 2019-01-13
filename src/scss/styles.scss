@@ -1,174 +1,35 @@
+
+
 * {
     box-sizing: border-box;
   }
-  
-  header, body, html {
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    } 
+    100% {
+      opacity: 1;
+    }
+
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    background-color: white;
+    display: flex;
+
+    &__title {
+      font-size: 17px;
+    }
   }
 
   @font-face {
     font-family: 'vogue';
     src: url(../media/Vogue.ttf);
-  }
-  
-  header {
-    background: url(../media/hero.jpg);
-    background-size: 100% 100%;
-  }
-  
-  .wrapper {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .content {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    h1 {
-      color: white;
-      font-family: 'vogue';
-      font-size: 1.5rem;
-      font-weight: 200;
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    .content h1 {
-      font-size: 5rem;
-      transition: all 0.3s ease;
-    }
-  }
-  
-  #logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: fixed;
-  }
-  
-  nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 47px;
-    background-color: white;
-    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
-    display: flex;
-    h1 {
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      font-style: 'vogue';
-    }
-  }
-  
-  .hamburger-button {
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-size: 25px;
-  }
-  
-  .menu-nav {
-    position: absolute;
-    top: 0px;
-    height: 100%;
-    left: -250px;
-    width: 250px;
-    background-color: white;
-    transition: all 0.3s ease;
-    a {
-      text-decoration: none;
-      font-family: 'vogue';
-      color: black;
-      display: flex;
-      flex-flow: wrap column;
-      align-items: center;
-      padding: 20px 0;
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    .hamburger-button {
-      display: none;
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    .menu-nav-desktop ul {
-      top: 0;
-      text-decoration: none;
-      font-family: 'vogue';
-      color: black;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      flex-wrap: nowrap;
-      position: fixed;
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    .menu-nav-desktop ul a {
-      text-decoration: none;
-      color: black;
-      flex-direction: column;
-      margin: 10px;
-      padding: 10px;
-      
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    .menu-nav-desktop ul a {
-      &:before {
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 5%;
-        background-color: black;
-        bottom: 5px;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: 0.5s;
-      }
-      &:hover::before {
-        transform: scaleX(1);
-      }
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    .menu-nav-desktop ul a {
-      text-decoration: none;
-      color: black;
-      flex-direction: column;
-      margin: 10px;
-      padding: 10px;
-    }
-  }
-  
-  @media only screen and (max-width: 992px) {
-    .menu-nav-desktop ul a {
-      display: none;
-    }
-  }
-  
-  .remove {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    right: 0;
-    left: 250px;
-  }
-  
-  .active {
-    transition: all 0.3s ease;
-    left: 0px;
   }
   
   hr {
@@ -188,7 +49,7 @@
     display: grid;
     justify-items: center;
     grid-gap: 30px;
-    padding: 50px;
+    padding: 30px;
   }
   
   @media only screen and (min-width: 992px) {
