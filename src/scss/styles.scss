@@ -12,7 +12,7 @@
       opacity: 1;
     }
   }
-  
+
   .header {
     position: fixed;
     top: 0;
@@ -59,7 +59,8 @@
   
   .building {
     padding: 30px;
-    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+    border-radius: 10px;
     &__pictogram {
       height: 70px;
       margin: 0 auto;
@@ -71,7 +72,8 @@
 
   .investment {
     padding: 30px;
-    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+    border-radius: 10px;
     &__pictogram {
       height: 70px;
       margin: 0 auto;
@@ -83,9 +85,10 @@
 
   .estimate {
     padding: 30px;
-    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+    border-radius: 10px;
     &__pictogram {
-      height: 70px;
+      text-align: center;
       margin: 0 auto;
     }
     &__description {
@@ -104,6 +107,10 @@
     justify-items: center;
     padding: 50px;
     grid-gap: 20px;
+
+    &__pictures {
+      width: 100%;
+    }
   }
   
   @media only screen and (min-width: 992px) {
@@ -113,12 +120,8 @@
   }
   
   .offers__cards {
-    box-shadow: 0px 0px 30px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
-  }
-
-  .offers__pictures {
-   width: 100%;
-    
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+    border-radius: 10px;
   }
   
   @media only screen and (min-width: 992px) {
@@ -135,8 +138,7 @@
     padding: 30px;
     margin: 30px;
     text-align: center;
-    box-shadow: 0px 0px 30px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
-    color: black;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
     &:hover {
       box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
       transition: 0.1s;
