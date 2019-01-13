@@ -1,2 +1,2 @@
 # LUXURY
-Estate agency vitrine website
+Estate agency vitrine website.

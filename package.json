@@ -1,0 +1,26 @@
+{
+  "name": "luxury",
+  "version": "1.0.0",
+  "description": "Estate agency vitrine website",
+  "main": "script.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BillYede/LUXURY.git"
+  },
+  "author": "Bill Wilson Yede Nka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BillYede/LUXURY/issues"
+  },
+  "homepage": "https://github.com/BillYede/LUXURY#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.15.1"
+  }
+}
