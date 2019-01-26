@@ -1,3 +1,4 @@
+
 const animate = document.querySelectorAll(".building, .investment, .estimate, .offers__cards, .history");
 
 animate.forEach(element => {
